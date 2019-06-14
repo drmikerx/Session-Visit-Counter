@@ -1,0 +1,21 @@
+<h1>You have visited this page {{count}} times!</h1>
+
+<form action="/count" method="post">
+  <input type="submit" name="command" value="resetCount">
+</form>
+
+<!--
+<script>
+  
+  document.addEventListener('DOMContentLoaded', bindButtons);
+
+  function bindButtons() {
+  document.getElementById("resetButton").addEventListener("click", function resetCounter() {
+    var req = new XMLHTTPRequest();
+    req.open("POST", "http://flip2.engr.oregonstate.edu:9845/count", false);
+    req.send({command : "resetCount"});
+    })
+  }
+
+</script>
+-->
